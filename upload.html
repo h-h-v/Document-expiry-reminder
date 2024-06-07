@@ -1,0 +1,23 @@
+<html>
+    <link rel="icon" href=
+"https://static.wikia.nocookie.net/legojurassicworld/images/5/5c/Trex_Icon.PNG/revision/latest?cb=20150504031951"
+          type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="/static/styles1.css" rel="stylesheet">
+    <title>Upload</title>
+    <div class="container">
+        <div class="section">
+            <h1>Add a Document</h1>
+            <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+            <form method="post" action="/doc">
+                <label for="name" style="font-weight: bold;">Document:&nbsp;</label>
+                <input type="text" id="name" name="name" style="width: 1470px; height:60px; font-size:50px;"><br>
+                <label for="name" style="font-weight: bold;">Expiration Month: </label>
+                <input type="text" id="month" name="month" style="width: 1230px; height:60px; font-size:50px;"><br>
+                <label for="name" style="font-weight: bold;">Expiration Year: </label>
+                <input type="text" id="month" name="year" style="width: 1310px; height:60px; font-size:50px;"><br>
+                <input type="submit" value="CONFIRM">
+            </form>
+        </div>
+</html>

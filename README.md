@@ -1,0 +1,18 @@
+# EXPIRATION REMINDER
+#### Video Demo:  https://youtu.be/vUSe8DSBphQ
+#### Description:
+In the busy life we often forget to renew our government and personal IDs like passports, visas credit cards, Licenses like driving and medical licenses. This often costs us a lot more to get it sorted later when the document expires and it also takes a lot more time to finish to process of the renewal. Hence to prevent this mishap the above propsed software will have the features which will take in as the inmput the name of the document and the expiration date of the document. Every time the software is run, it will compare the expiration year and month of the document along with the current year and date by taking  the document from the sql database by using python modules along with sql.
+
+The web application is designed to manage user document statuses, and it comprises several key components to provide a seamless and user-friendly experience. The HTML files, style.css, style1.css, and style2.css collectively define the structure, content, and visual appeal of the application.
+
+The main page, index.html, acts as the user dashboard, displaying crucial information about the status of their documents. The style.css file is responsible for defining the overall aesthetics and layout of this page. It ensures a cohesive and visually pleasing user interface, enhancing the overall user experience.
+
+For user authentication, the login.html page, styled using style2.css, serves as the gateway for users to input their login credentials. This page is part of the security measures implemented to ensure that only authorized users can access the application's features. The associated CSS file, style2.css, provides the necessary styling to make the login form intuitive and visually consistent.
+
+On the upload.html page, users can submit and upload documents. This page is styled using style1.css, which is tailored to the specific requirements of the document upload functionality. The stylesheet ensures that the upload form is visually distinct from other sections of the application, maintaining a cohesive yet differentiated design.
+
+The server-side functionality is handled by the app.py file, leveraging the Flask web framework. Flask facilitates the integration of dynamic content from the Python script into the HTML templates. Route definitions within app.py specify how different pages are rendered and how user interactions are processed. It serves as the backbone of the web application, orchestrating the communication between the client and the server.
+
+To persist user information, the application utilizes a SQLite database file named ourdb.db. This file contains tables, such as 'user,' storing usernames, passwords, and potentially additional details. The database is instrumental in user authentication, ensuring secure access to the application. It also plays a crucial role in tracking the status of documents, allowing for the differentiation between active and expired statuses.
+
+In summary, the web application harmoniously combines HTML files, CSS stylesheets, a Python script, and a database to provide users with a robust platform for managing document statuses. The thoughtful separation of concerns, with distinct stylesheets for different pages, enhances the overall aesthetics and usability of the application. The Flask framework facilitates seamless interactions between the client and server, while the SQLite database ensures secure storage and retrieval of user information. Together, these components contribute to the creation of an efficient, visually appealing, and user-centric web application.

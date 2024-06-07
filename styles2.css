@@ -1,0 +1,32 @@
+input{
+    font-size: 200px;
+    font-family: "Space Grotesk",sans-serif;
+    Color: white;
+    border: none;
+    outline: none;
+    background-color: #0b0b0c;
+    border-bottom: 1px solid rgb(253, 212, 158);
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+    margin-left:750px;
+    height:50px;
+    width: 260px;
+    font-size: 40px;
+    left: 45%;
+}
+.btn{
+    background-color: rgb(253, 212, 158);
+    font-size:50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5%;
+    height: 70px;
+    width: 230px;
+    align-items: center;
+    font-family: "Space Grotesk",sans-serif;
+    font-weight: 1000;
+    margin: 0;
+    position: absolute;
+    left: 45%;
+    width: 130px;
+    font-size: 40px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="icon" href=
+"https://static.wikia.nocookie.net/legojurassicworld/images/5/5c/Trex_Icon.PNG/revision/latest?cb=20150504031951"
+          type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Documents</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>$_DOCUMENTS</h1>
+        </div>
+            <div>
+                <h2>{{ name }}</h2>
+                <table>
+                    <thead>
+                        <tr class="section1">
+                            <th>Document</th>
+                            <th>Expiry</th>
+                            <th>Duration</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="section2">
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% for row in rows %}
+                        <tr>
+                            <td>{{row.name}}</td>
+                            <td>{{row.month}}/{{row.year}}</td>
+                            {% if row.name != "" and row.year != "" and row.month !="" %}
+                                {% if row.year >= year.year and row.month > year.month %}
+                                        <td>ACTIVE</td>
+                                {% elif row.year > year.year %}
+                                        <td>ACTIVE</td>
+                                {% else %}
+                                        <td>EXPIRED</td>
+                                {% endif %}
+                            {% endif %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <form action="/upload">
+                    <button class="plus" >+</button>
+                </form>
+                <form action="/">
+                    <button class="logout" >logout</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
